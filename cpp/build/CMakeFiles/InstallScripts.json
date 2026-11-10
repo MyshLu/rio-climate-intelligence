@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/mysh/projects/rio-climate-intelligence/cpp/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
