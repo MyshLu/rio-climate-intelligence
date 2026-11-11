@@ -1,5 +1,8 @@
 from pathlib import Path
 import rasterio
+import pystac
+import requests
+
 
 def inspect_raster(file_path: Path) -> None:
     with rasterio.open(file_path) as file:
@@ -7,7 +10,7 @@ def inspect_raster(file_path: Path) -> None:
         raster_height = file.height
         raster_CRS = file.crs
         raster_res = file.res
-        raster_bands = file.count
+        raster_bands = file.count  
         print(f"Width: {raster_width}")
         print(f"Height: {raster_height}")
         print(f"Bands: {raster_bands}")
